@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4d04e;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+  }
+  .main {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgb(31 20 20 / 20%);
+    overflow: hidden;
+  }
+  .img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      padding:25px;
+  margin-top:15px;
+    background-color: #ffffff;
+}
+      
+  
+  svg{
+      border-radius:20px;
+  }
+  
+  .text-container {
+    text-align: center;
+      padding:10px;
+  }
+  .text-container h1 {
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  .text-container p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .main > div:nth-child(2) {
+    padding: 15px 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  .main > div:nth-child(2) h2 {
+    font-size: 0.8rem;
+    background-color: #f4d04e;
+    color: #111;
+      display:inline;
+    padding: 2px 6px;
+    border-radius: 4px;
+  margin-bottom:10px;
+  }
+  .main > div:nth-child(2) p {
+    font-size: 1rem;
+      margin-top:10px;
+  }
+  .main > div:last-child {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+  }
+  .main > div:last-child img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .main > div:last-child p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .main {
+      width: 90%; /* Make the card width responsive */
+    }
+  
+    .img-container {
+      height: 150px; /* Adjust the image container height for smaller screens */
+    }
+  
+    .text-container h1 {
+      font-size: 1.2rem; /* Reduce the title size */
+    }
+  
+    .text-container p {
+      font-size: 0.8rem; /* Reduce paragraph font size */
+    }
+  
+    .main > div:nth-child(2) h2 {
+      font-size: 0.7rem; /* Reduce font size of the "Learning" text */
+    }
+  
+    .main > div:nth-child(2) p {
+      font-size: 0.7rem; /* Reduce font size of the "Published" text */
+      margin: 5px 0 0; /* Adjust spacing */
+    }
+  
+    .main > div:last-child p {
+      font-size: 0.8rem; /* Adjust font size for the last block text */
+    }
+  }
